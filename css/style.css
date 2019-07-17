@@ -1,0 +1,69 @@
+.bg-black{
+  background-color: black;
+}
+
+.font-div{
+  width: 30%;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 1198px){
+  .font-div{
+    padding: 43px 0px!important;
+  }
+}
+
+a {
+  color:#e0fcff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover{
+  font-size: 3em;
+  color: #c3bee6;
+  cursor: pointer;
+}
+
+.p-5 {
+  padding: 0;
+}
+
+.input-group-lg>.custom-select, .input-group-lg>.form-control:not(textarea) {
+  height: calc(1.5em + 1rem + 10px);
+}
+
+.typewriter {
+  font-family: monospace; /* Web-safe typewriter-like font */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #fc6674; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(50, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: #fc6674; }
+}
+
+.msgArea{
+  width: 100%;
+  height: 25vh;
+}
