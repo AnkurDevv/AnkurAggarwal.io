@@ -10,7 +10,7 @@
     $txt = "You have received an email from ". $name.".\n\n".$message;
 
     mail($mailTo,$subject,$txt,$headers);
-   
+    header("Location:index.html");
    }
    else{
         $message = "Your Form is getting submitted but NO values found !";
