@@ -261,11 +261,6 @@ function validateForm() {
               </div>
             <input type="submit" name="submit" id="btn" class="btn btn-danger p-2" value="submit"></input>             
           </form>
-            <div id="msg-confirmation" class="p-3 justify-content-center" style="display:none">
-              <span><i class="fa fa-envelope"></i></span> 
-              <strong>Your Message is on it's way !! </strong>
-              <span> <i class="fa fa-envelope"></i></span> 
-            </div>
       </div>
     </div>
   
@@ -288,12 +283,6 @@ function validateForm() {
     $('.font-div').click(function(){
       $('.collapse').collapse('hide'); 
     });
-
-    $(document).ready(function () {
-    $("#btn").click(function () {
-        $("#msg-confirmation").toggle();
-    });
-});
 
   </script>
 
