@@ -14,7 +14,6 @@
 <script>
   // Validate Form input
 function validateForm() {
-  alert('Your form is getting submitted');
   var x = document.forms["myForm"]["name"].value;
   var y = document.forms["myForm"]["email"].value;
   var z = document.forms["myForm"]["message"].value;
@@ -22,6 +21,9 @@ function validateForm() {
   if (x.trim() == "" || y.trim()  == "" || z.trim()  == "" || e.trim()  == "") {
     alert("All Values must be filled out before sending the message");
     return false;
+  }
+  else{
+    return true;
   }
 }
 </script>
@@ -285,11 +287,13 @@ function validateForm() {
     $('.font-div').click(function(){
       $('.collapse').collapse('hide'); 
     });
- 
+
+    if(validateForm()){
     $(document).ready(function () {
     $("#btn").click(function () {
         $("#msg-confirmation").toggle();
     });
+  }
 });
 
   </script>
