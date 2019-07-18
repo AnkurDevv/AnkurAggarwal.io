@@ -11,7 +11,19 @@
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
   
-
+<script>
+  // Validate Form input
+function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  var y = document.forms["myForm"]["email"].value;
+  var z = document.forms["myForm"]["message"].value;
+  var e = document.forms["myForm"]["subject"].value;
+  if (x.trim() == "" || y.trim() == "" || z.trim() == "" || e.trim() == "") {
+    alert("All Values must be filled out before sending the message");
+    return false;
+  }
+}
+</script>
 </head>
 
 <body>
@@ -206,7 +218,7 @@
     <div class= "card card-body">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-8 col-12">
-          <from id="contact-form" action="contact-form.php" method="post">
+          <from id="contact-form" name="MyForm" onsubmit="return validateForm()" action="contact-form.php" method="post">
             <!-- Name -->
             <div class="form-group">
               <div class="input-group input-group-lg">
@@ -241,7 +253,7 @@
                 <textarea name="message" placeholder="Message" class="msgArea bg-dark text-white text-white p-3"></textarea>
               </div>
             </div>
-              <input type="submit" name="submit" id="btn" class="btn btn-danger" value="Send Message"></input>
+            <button type="submit" name="submit" id="btn" class="btn btn-danger p-3" value="submit">Send Message</button>             
           </form>
             <div id="msg-confirmation" class="p-3 justify-content-center" style="display:none">
               <i class="fa fa-envelope"></i></span> 
@@ -293,6 +305,8 @@ window.onload =  function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+
 </script>
 
 
