@@ -5,15 +5,9 @@
     $mailFrom = $_POST['email'];
     $message = $_POST['message'];
 
-    $mailTo = "Ankur.Aggarwal@georgebrown.ca"
+    $mailTo = "Ankur.Aggarwal_2112@outlook.com";
     $headers = "From: ". $mailFrom;
     $txt = "You have received an email from ". $name.".\n\n".$message;
-
     mail($mailTo,$subject,$txt,$headers);
-    header("Location:index.html");
+    header("Location: index.html")
    }
-   else{
-        $message = "Your Form is getting submitted but NO values found !";
-            echo "<script type='text/javascript'>alert('$message');</script>";
-    }
-?>
