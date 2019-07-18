@@ -11,6 +11,9 @@
 
     mail($mailTo,$subject,$txt,$headers);
     header("Location:index.php?mailsend");
+
+    echo "<script type=\"text/javascript\">window.alert('You must enter your full name.');
+         window.location.href = '/index.html';</script>"; 
    }
    else{
        console.log("No form found ")
