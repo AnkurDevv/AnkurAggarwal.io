@@ -12,4 +12,7 @@
     mail($mailTo,$subject,$txt,$headers);
     header("Location:index.php?mailsend");
    }
+   else{
+       console.log("No form found ")
+   }
 ?>
