@@ -158,5 +158,16 @@ q {
   font-size: 1.5em;
 }
 
-/* Add a blue color to the author */
+/* Add a white color to the author */
 .author {color:white;}
+
+/* adding animations */
+.w3-animate-bottom {
+  position: relative;
+  animation: animatebottom 1.7s;
+}
+
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 1.7s;
+}
