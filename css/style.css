@@ -11,6 +11,21 @@ img{
   height: 100%;
 }
 
+/* EXPERIMENTING WITH OPACITY AND VIDEO BACKGROUND*/
+ .container{
+   opacity: 0.9;
+   z-index: -1;
+ }
+ 
+ video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+ }
+
+/* EXPERIMENTING WITH OPACITY AND VIDEO BACKGROUND */
 
 /* Responsive */
 
@@ -69,7 +84,7 @@ a:hover{
 
 
 /* Changing color background effect */
-body{
+/* body{
   background-color:#c46b6b;
   -webkit-animation-name: example; 
   -webkit-animation-duration: 4s; 
@@ -86,7 +101,7 @@ body{
 @keyframes example {
   from {background-color: red;}
   to {background-color: rgba(162, 68, 51, 0.843);}
-}
+} */
 
 
 /* CSS FOR SLIDESHOW IN FOOTER */
